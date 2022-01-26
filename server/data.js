@@ -1,4 +1,4 @@
- const artists = [
+ const artistsData = [
 
     {id: 1, name:'The Weeknd' , sex: 'male', spotifyUrl: 'https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ'},  
     {id: 2, name: 'Justin Bieber', sex: 'male', spotifyUrl  : 'https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s'},
@@ -22,3 +22,4 @@
     {id: 20, name:'Maroon 5' , sex: 'male', spotifyUrl:'https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP'},
 ]   
    
+module.exports = {artistsData}
