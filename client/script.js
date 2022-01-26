@@ -44,7 +44,7 @@ const form = document.querySelector('#search-form')
     const newLi = document.createElement('li');
     const artistLink= document.createElement('a')
     artistLink.setAttribute('class', 'artist-link')
-    artistLink.setAttribute('href', `${data.url}`)
+    artistLink.setAttribute('href', `${data.spotifyUrl}`)
     const artistsList = document.querySelector('#search-result');
     artistLink.textContent = `Artist: ${data.name}`;
     newLi.appendChild(artistLink);
