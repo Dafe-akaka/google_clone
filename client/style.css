@@ -21,9 +21,13 @@ input {
 }
 
 .submit,
-.link-to-the-page {
+.get-all-artist {
   width: 150x;
   background-color: #1c87c9;
   color: #ffffff;
   padding: 15px 30px 15px 30px;
+}
+
+#search-result {
+  text-align: left;
 }
