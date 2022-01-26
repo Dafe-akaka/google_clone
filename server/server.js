@@ -10,7 +10,7 @@ const { artistsData } = require('./data');
 app.get('/artists', (req, res) => {
     const allArtists = Artist.all;
     try {
-        res.status(200).send(allArtists);
+        res.status(200).json(allArtists);
     } catch(err) {
         console.log(err);
         res.status(400).send({ message: `Could not get artists`});
