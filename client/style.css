@@ -1,0 +1,29 @@
+#image {
+  text-align: center;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+  padding: 15px 30px 15px 30px;
+  border: solid;
+}
+
+.search {
+  width: 75%;
+}
+
+.submit,
+.link-to-the-page {
+  width: 150x;
+  background-color: #1c87c9;
+  color: #ffffff;
+  padding: 15px 30px 15px 30px;
+}
