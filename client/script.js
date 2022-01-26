@@ -6,52 +6,60 @@ const form = document.querySelector('#search-form')
    
         e.preventDefault();
         
-        const randonInput = e.target.text.value;
+        clearArtistList();
+        
+        const randomInput = e.target.text.value;
 
-        if(randonInput.toLowerCase() === "random")
+        if(randomInput.toLowerCase() === "random")
         {
             getRandom();
         }
-        try{
+        else
+        {
+            try
+            {
 
-      
-
-            const response = await fetch('http://localhost:3000/artists')
+                const response = await fetch('http://localhost:3000/artists')
     
-            const data = await response.json()
+                const data = await response.json()
     
-            setData(data)
-            
-            
-    
-        } catch (err) {
-            console.log(err)
+                setData(data)
+     
+            } catch (err) {
+                console.log(err)
+            }
         }
     }
   
-    function getRandom(){
+function getRandom(){
 
-      fetch('http://localhost:3000/artists/random')
-        .then(response => response.json()) 
-        .then(json => setData(json))
+    fetch('http://localhost:3000/artists/random')
+    .then(response => response.json()) 
+    .then(json => appendSearch(json))
 
-    }
-    function setData(artists){
-        artists.forEach((artist) => appendSearch(artist));
-    };
+};
 
-  function appendSearch(data){
+function setData(artists){
+    artists.forEach((artist) => appendSearch(artist));
+};
+
+function clearArtistList()
+{
+    const artistsList = document.querySelector('#search-result');
+    artistsList.innerHTML = "";
+}
+
+function appendSearch(data){
     const newLi = document.createElement('li');
     const artistLink= document.createElement('a')
     artistLink.setAttribute('class', 'artist-link')
-    artistLink.setAttribute('href', `${data.url}`)
+    artistLink.setAttribute('href', `${data.spotifyUrl}`)
     const artistsList = document.querySelector('#search-result');
     artistLink.textContent = `Artist: ${data.name}`;
     newLi.appendChild(artistLink);
     artistsList.append(newLi);
-  }
+};
+ 
   
-  
-  
-form.addEventListener('submit', init)
+form.addEventListener('submit', init);
   
