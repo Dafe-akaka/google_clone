@@ -12,20 +12,28 @@
     <div id="image">
     <img src="./img/Search.jpg" alt="Logo" />
     <div>
-    <form action="/form/submit" method="GET">
+    <h1 id="quote-message"></h1>
+    <form id="search-form">
       <input
         type="text"
         name="text"
         class="search"
         placeholder="Search here!"
       />
-      <input type="submit" name="submit" class="submit" value="Search" />
+      <input type="Button" name="submit" class="submit" value="Search" />
       <input
         type="submit"
-        name="link-to-the-page"
-        class="link-to-the-page"
-        value="Take me to this page"
+        name="get-all-artist"
+        class="get-all-artist"
+        value="Get all artist"
       />
     </form>
+    <section>
+    <ul id="search-result">
+
+    </ul>
+        
+      </section>
+      <script src="script.js"></script>
   </body>
 </html>
