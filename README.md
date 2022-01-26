@@ -2,6 +2,7 @@
 
 google-clone is as it says on the tin a make shift clone of google.
 
+only the get all button works at the momment.
 ## Installation
 
 to start server use
