@@ -1,6 +1,6 @@
  const artistsData = [
 
-    {id: 1, name:'The Weeknd' , sex: 'male', spotifyUrl: 'https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ'},  
+    {id: 1, name:'The Weeknd' , sex: 'male', spotifyUrl: "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"},  
     {id: 2, name: 'Justin Bieber', sex: 'male', spotifyUrl  : 'https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s'},
     {id: 3, name: 'Ed Sheeran', sex: 'male', spotifyUrl:'https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V'},
     {id: 4, name: '	Dua Lipa', sex: 'female', spotifyUrl: 'https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we'},
